@@ -1,4 +1,6 @@
 import { Card } from "@/components/ui/card"
+import Image from 'next/image'
+import profileImage from '@/public/images/profile.jpg'
 
 export function About() {
   return (
@@ -8,22 +10,30 @@ export function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-4">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm a passionate fullstack developer with expertise in building modern web applications. I specialize in
-              React, Node.js, and cloud technologies, creating solutions that are both beautiful and performant.
+              Hi, I’m Lahiru Jeewantha, a passionate Full-Stack Developer with a strong focus on building dynamic and user-friendly web applications. 
+              I have graduated with a BSc (Hons) in Information Technology from SLIIT, and I love turning ideas into real, impactful digital experiences.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              My approach combines technical excellence with user-centered design, ensuring that every project I work on
-              delivers real value. I'm constantly learning and exploring new technologies to stay at the forefront of
-              web development.
+              I enjoy working across both the frontend and backend, using technologies like 
+              Next.js, Node.js, Python, MongoDB, and Firebase to create clean, scalable, and efficient solutions. 
+              My interests also extend into AI integration and intelligent systems, 
+              where I explore how technology can make learning and everyday tasks smarter and more engaging.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              When I'm not coding, you'll find me contributing to open-source projects, writing technical articles, or
-              exploring the latest trends in software development.
+             I’m a continuous learner who thrives on solving problems, collaborating with teams, and crafting solutions that 
+             improve user experience and add real value.
+
+            When I’m not coding, I enjoy exploring new tech trends, learning about AI, and finding creative ways to grow as a 
+            developer.
             </p>
           </div>
           <div className="flex justify-center">
             <Card className="w-full max-w-sm aspect-square bg-muted flex items-center justify-center overflow-hidden">
-              <img src="/professional-developer-portrait.png" alt="Lahiru Jeewantha" className="w-full h-full object-cover" />
+              <Image src={profileImage} 
+              alt="Lahiru Jeewantha"   
+              width={500}
+              height={300}
+              className="object-cover" />
             </Card>
           </div>
         </div>

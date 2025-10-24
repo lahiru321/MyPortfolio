@@ -5,48 +5,14 @@ import { ExternalLink, Github } from "lucide-react"
 
 const projects = [
   {
-    title: "E-Commerce Platform",
+    title: "Wealth Management App",
     description:
-      "A full-featured online shopping platform with payment integration and real-time inventory management.",
-    techStack: ["React", "Node.js", "MongoDB", "Stripe"],
+      "Personal finance management application that helps users track expenses and get recommendations through AI for better financial health.",
+    techStack: ["Next.js", "Node.js", "MongoDB", "AWS bedrock", "AWS Beanstalk"],
     liveUrl: "#",
     githubUrl: "#",
   },
-  {
-    title: "Task Management App",
-    description: "Collaborative task management tool with real-time updates and team collaboration features.",
-    techStack: ["Next.js", "Firebase", "Tailwind CSS"],
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "Weather Dashboard",
-    description: "Real-time weather tracking application with interactive maps and detailed forecasts.",
-    techStack: ["React", "TypeScript", "OpenWeather API"],
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "Social Media Analytics",
-    description: "Analytics dashboard for tracking social media metrics and engagement across platforms.",
-    techStack: ["Vue.js", "Express", "PostgreSQL", "Chart.js"],
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "Portfolio Generator",
-    description: "Tool for developers to quickly create and deploy professional portfolio websites.",
-    techStack: ["Next.js", "Vercel", "Markdown"],
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "Fitness Tracker",
-    description: "Mobile-first fitness tracking app with workout plans and progress visualization.",
-    techStack: ["React Native", "Node.js", "MongoDB"],
-    liveUrl: "#",
-    githubUrl: "#",
-  },
+
 ]
 
 export function Projects() {
