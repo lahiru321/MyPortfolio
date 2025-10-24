@@ -3,37 +3,14 @@ import { Badge } from "@/components/ui/badge"
 
 const experiences = [
   {
-    role: "Senior Fullstack Developer",
-    company: "Tech Solutions Inc.",
-    duration: "2022 - Present",
+    role: "Software Intern",
+    company: "Bistec Global",
+    duration: "2023 -2024",
     description:
-      "Leading development of enterprise web applications using React and Node.js. Mentoring junior developers and implementing best practices across the team.",
-    technologies: ["React", "Node.js", "AWS", "MongoDB"],
+      "Worked as a Software Engineering Intern, contributing to the development of innovative web-based solutions. Collaborated on projects involving AI integration and cloud deployment, focusing mainly on frontend development while gaining exposure to backend systems and Azure cloud operations.",
+    technologies: ["Next.js", "ASP.NET", "Azure", "MongoDB", "PstgreSQL"],
   },
-  {
-    role: "Fullstack Developer",
-    company: "Digital Innovations",
-    duration: "2020 - 2022",
-    description:
-      "Developed and maintained multiple client projects, focusing on responsive design and performance optimization. Collaborated with designers and product managers.",
-    technologies: ["Vue.js", "Express", "PostgreSQL", "Docker"],
-  },
-  {
-    role: "Frontend Developer",
-    company: "StartUp Labs",
-    duration: "2019 - 2020",
-    description:
-      "Built user interfaces for SaaS products using modern JavaScript frameworks. Implemented responsive designs and ensured cross-browser compatibility.",
-    technologies: ["React", "TypeScript", "Tailwind CSS", "Firebase"],
-  },
-  {
-    role: "Junior Developer",
-    company: "Web Agency Co.",
-    duration: "2018 - 2019",
-    description:
-      "Assisted in developing websites and web applications for various clients. Learned industry best practices and modern development workflows.",
-    technologies: ["HTML", "CSS", "JavaScript", "WordPress"],
-  },
+
 ]
 
 export function Experience() {

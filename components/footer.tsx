@@ -10,17 +10,17 @@ export function Footer() {
         <div className="flex flex-col items-center gap-6">
           <div className="flex items-center gap-4">
             <Button size="icon" variant="ghost" asChild>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <a href="https://github.com/lahiru321" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <Github className="h-5 w-5" />
               </a>
             </Button>
             <Button size="icon" variant="ghost" asChild>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/lahiru-samarahewa-280110227/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <Linkedin className="h-5 w-5" />
               </a>
             </Button>
             <Button size="icon" variant="ghost" asChild>
-              <a href="mailto:lahiru@example.com" aria-label="Email">
+               <a href="mailto:lahirujeewantha321@gmail.com" aria-label="Email">
                 <Mail className="h-5 w-5" />
               </a>
             </Button>
