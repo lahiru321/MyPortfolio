@@ -5,10 +5,10 @@ import { ExternalLink, Github } from "lucide-react"
 
 const projects = [
   {
-    title: "Wealth Management App",
+    title: "E-commerce gaming site",
     description:
-      "Personal finance management application that helps users track expenses and get recommendations through AI for better financial health.",
-    techStack: ["Next.js", "Node.js", "MongoDB", "AWS bedrock", "AWS Beanstalk"],
+      "Game E-commerce site with Animated user interface and can purchase games using crypto payments.",
+    techStack: ["Next.js", "Superbase", "Cryptomus", "Spline"],
     liveUrl: "https://game-site-eight-kappa.vercel.app/",
     githubUrl: "https://github.com/lahiru321/GameSite",
   },
