@@ -9,9 +9,17 @@ const projects = [
     description:
       "Personal finance management application that helps users track expenses and get recommendations through AI for better financial health.",
     techStack: ["Next.js", "Node.js", "MongoDB", "AWS bedrock", "AWS Beanstalk"],
-    liveUrl: "https://wealth-managment-app.vercel.app/",
-    githubUrl: "https://github.com/lahiru321/MyPortfolio",
+    liveUrl: "https://game-site-eight-kappa.vercel.app/",
+    githubUrl: "https://github.com/lahiru321/GameSite",
   },
+    {
+    title: "Wealth Management App",
+    description:
+      "Personal finance management application that helps users track expenses and get recommendations through AI for better financial health.",
+    techStack: ["Next.js", "Node.js", "MongoDB", "AWS bedrock", "AWS Beanstalk"],
+    liveUrl: "https://wealth-managment-app.vercel.app/",
+    githubUrl: "https://github.com/lahiru321/wealth-managment-app",
+  }
 
 ]
 
