@@ -12,13 +12,21 @@ const projects = [
     liveUrl: "https://game-site-eight-kappa.vercel.app/",
     githubUrl: "https://github.com/lahiru321/GameSite",
   },
-    {
+  {
     title: "Wealth Management App",
     description:
       "Personal finance management application that helps users track expenses and get recommendations through AI for better financial health.",
     techStack: ["Next.js", "Node.js", "MongoDB", "AWS bedrock", "AWS Beanstalk"],
     liveUrl: "https://wealth-managment-app.vercel.app/",
     githubUrl: "https://github.com/lahiru321/wealth-managment-app",
+  },    
+  {
+    title: "Zentry",
+    description:
+      "Zentry is a single-page marketing/landing site for a metagame product. It uses plain HTML, CSS and a small app.js script. The site includes a hero video, info cards with autoplay videos, and a contact section.",
+    techStack: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://zentry-gaming-site.vercel.app/",
+    githubUrl: "https://github.com/lahiru321/Zentry-gaming-site",
   }
 
 ]
