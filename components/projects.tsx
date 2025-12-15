@@ -34,6 +34,16 @@ const projects = [
     githubUrl: "https://github.com/lahiru321/Zentry-gaming-site",
     gradient: "from-green-500 via-emerald-500 to-teal-500",
     number: "03",
+  },
+    {
+    title: "Clothing Website",
+    description:
+      "Fully Functionl clothing website Where users can buy clothes online and admins can manage the website using admin dashboard.",
+    techStack: ["Next.js", "NodeJs", "Superbase", "MongoDB", "Vercel", "Render"],
+    liveUrl: "",
+    githubUrl: "https://github.com/lahiru321/rainvidz-clothing-website",
+    gradient: "from-yellow-500 via-orange-500 to-red-500",
+    number: "04",
   }
 ]
 
