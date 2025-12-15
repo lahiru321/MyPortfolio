@@ -9,7 +9,6 @@ import "./globals.css"
 export const metadata: Metadata = {
   title: "Lahiru Jeewantha - Fullstack Developer",
   description: "Portfolio of Lahiru Jeewantha, a passionate fullstack developer",
-  generator: "v0.app",
 }
 
 export default function RootLayout({
