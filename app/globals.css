@@ -24,22 +24,22 @@
 }
 
 .dark {
-  /* Premium Dark Mode - Deep Navy with Vibrant Accents */
-  --background: 10 14 39;
-  --foreground: 248 250 252;
-  --card: 15 23 42;
-  --card-foreground: 248 250 252;
-  --primary: 59 130 246;
-  --primary-foreground: 255 255 255;
-  --secondary: 168 85 247;
+  /* Cyberpunk Yellow & Electric Blue Dual-Mode Palette */
+  --background: 2 3 8;
+  --foreground: 245 245 245;
+  --card: 8 10 22;
+  --card-foreground: 245 245 245;
+  --primary: 255 215 0; /* Cyber Yellow */
+  --primary-foreground: 2 3 8;
+  --secondary: 0 160 255; /* Electric Blue / Cyber Blue */
   --secondary-foreground: 255 255 255;
-  --accent: 6 182 212;
-  --accent-foreground: 255 255 255;
-  --muted: 30 41 59;
-  --muted-foreground: 148 163 184;
-  --border: 30 41 59;
-  --input: 30 41 59;
-  --ring: 59 130 246;
+  --accent: 0 255 240; /* Neon Cyan Accent */
+  --accent-foreground: 2 3 8;
+  --muted: 15 18 35;
+  --muted-foreground: 140 150 165;
+  --border: 40 45 65;
+  --input: 15 18 35;
+  --ring: 255 215 0;
 }
 
 @theme inline {
@@ -183,6 +183,53 @@
   }
 }
 
+@keyframes glitch {
+  0% {
+    clip-path: inset(40% 0 61% 0);
+    transform: translate(-2px, 2px);
+  }
+  20% {
+    clip-path: inset(92% 0 1% 0);
+    transform: translate(1px, -3px);
+  }
+  40% {
+    clip-path: inset(43% 0 1% 0);
+    transform: translate(-1px, 3px);
+  }
+  60% {
+    clip-path: inset(25% 0 58% 0);
+    transform: translate(2px, -1px);
+  }
+  80% {
+    clip-path: inset(54% 0 7% 0);
+    transform: translate(-2px, 1px);
+  }
+  100% {
+    clip-path: inset(58% 0 43% 0);
+    transform: translate(1px, -2px);
+  }
+}
+
+@keyframes scanline {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes cyber-pulse {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -190,7 +237,7 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    background: linear-gradient(to bottom, rgb(10, 14, 39), rgb(15, 23, 42), rgb(10, 14, 39));
+    background: radial-gradient(circle at 50% 50%, rgb(5, 8, 25) 0%, rgb(2, 4, 12) 100%);
     min-height: 100vh;
   }
 
@@ -222,58 +269,54 @@
 
   /* Glass-morphism Effect */
   .glass {
-    background: rgba(15, 23, 42, 0.7);
+    background: rgba(5, 8, 20, 0.6);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.05);
   }
-
+ 
   .glass-strong {
-    background: rgba(15, 23, 42, 0.85);
+    background: rgba(2, 4, 12, 0.85);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   /* Gradient Text */
   .gradient-text {
-    background: linear-gradient(135deg, rgb(59, 130, 246), rgb(168, 85, 247), rgb(236, 72, 153));
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradient-shift 8s ease infinite;
+    color: rgb(var(--primary));
+    -webkit-background-clip: unset;
+    background-clip: unset;
+    -webkit-text-fill-color: unset;
+    animation: none;
+    background: transparent;
   }
 
   .gradient-text-cyan {
-    background: linear-gradient(135deg, rgb(6, 182, 212), rgb(59, 130, 246));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: rgb(var(--secondary));
+    -webkit-background-clip: unset;
+    background-clip: unset;
+    -webkit-text-fill-color: unset;
+    background: transparent;
   }
 
-  /* Gradient Backgrounds */
+  /* Solid Backgrounds */
   .gradient-bg {
-    background: linear-gradient(135deg, rgb(59, 130, 246), rgb(168, 85, 247));
+    background: rgb(var(--primary));
   }
 
   .gradient-bg-animated {
-    background: linear-gradient(135deg, rgb(59, 130, 246), rgb(168, 85, 247), rgb(236, 72, 153));
-    background-size: 200% 200%;
-    animation: gradient-shift 8s ease infinite;
+    background: rgb(var(--primary));
+    animation: glow-pulse 2s ease-in-out infinite;
   }
 
   /* Glow Effects */
-  .glow-blue {
-    box-shadow: 0 0 30px rgba(59, 130, 246, 0.5);
+  .glow-blue, .glow-cyan, .glow-yellow {
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
   }
 
-  .glow-purple {
-    box-shadow: 0 0 30px rgba(168, 85, 247, 0.5);
-  }
-
-  .glow-cyan {
-    box-shadow: 0 0 30px rgba(6, 182, 212, 0.5);
+  .glow-purple, .glow-orange {
+    box-shadow: 0 0 30px rgba(255, 170, 0, 0.4);
   }
 
   .glow-hover:hover {
@@ -329,9 +372,50 @@
   /* Neon Border */
   .neon-border {
     position: relative;
-    border: 2px solid transparent;
-    background: linear-gradient(rgb(15, 23, 42), rgb(15, 23, 42)) padding-box,
-      linear-gradient(135deg, rgb(59, 130, 246), rgb(168, 85, 247)) border-box;
+    border: 2px solid rgb(var(--primary));
+    background: rgb(8, 10, 22);
+  }
+ 
+  .cyber-grid {
+    background-size: 50px 50px;
+    background-image: 
+      linear-gradient(to right, rgba(255, 215, 0, 0.03) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 215, 0, 0.03) 1px, transparent 1px);
+    position: relative;
+  }
+
+  .cyber-grid::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+    opacity: 0.05;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .glitch-text:hover {
+    animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+                -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+                0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+
+  .scanline {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, rgba(6, 182, 212, 0.1) 50%, transparent);
+    animation: scanline 4s linear infinite;
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  .cyber-badge {
+    @apply px-3 py-1 text-xs font-mono uppercase tracking-widest border border-primary/30 bg-primary/10 text-primary rounded-sm;
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
   }
 
   /* Overlay Gradient */
@@ -343,7 +427,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(168, 85, 247, 0.1));
+    background: rgba(var(--primary), 0.05);
     pointer-events: none;
   }
 }
