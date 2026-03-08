@@ -23,7 +23,7 @@ export const PROJECTS_DATA: Project[] = [
     techStack: ["React Vite", ".Net", "PostgreSQL", "Docker"],
     liveUrl: "https://article-haven-peach.vercel.app/",
     githubUrl: "https://github.com/lahiru321/article-haven",
-    theme: "emerald",
+    theme: "violet",
 
   },
   {
