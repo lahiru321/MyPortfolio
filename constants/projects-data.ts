@@ -20,7 +20,7 @@ export const PROJECTS_DATA: Project[] = [
   {    
     title: "Article Haven",
     description: "Article Haven A modern blogging platform for writers, thinkers, and creators. Share your ideas with the world.",
-    techStack: ["HTML", "CSS", "JavaScript"],
+    techStack: ["React Vite", ".Net", "PostgreSQL", "Docker"],
     liveUrl: "https://article-haven-peach.vercel.app/",
     githubUrl: "https://github.com/lahiru321/article-haven",
     theme: "emerald",
