@@ -17,13 +17,14 @@ export const PROJECTS_DATA: Project[] = [
     githubUrl: "https://github.com/lahiru321/wealth-managment-app",
     theme: "rose",
   },
-  {
-    title: "Zentry",
-    description: "Zentry is a single-page marketing/landing site for a metagame product. It uses plain HTML, CSS and a small app.js script. The site includes a hero video, info cards with autoplay videos, and a contact section.",
+  {    
+    title: "Article Haven",
+    description: "Article Haven A modern blogging platform for writers, thinkers, and creators. Share your ideas with the world.",
     techStack: ["HTML", "CSS", "JavaScript"],
-    liveUrl: "https://zentry-gaming-site.vercel.app/",
-    githubUrl: "https://github.com/lahiru321/Zentry-gaming-site",
+    liveUrl: "https://article-haven-peach.vercel.app/",
+    githubUrl: "https://github.com/lahiru321/article-haven",
     theme: "emerald",
+
   },
   {
     title: "Clothing Website",
@@ -32,5 +33,13 @@ export const PROJECTS_DATA: Project[] = [
     liveUrl: "https://rainvidz-clothing-website.vercel.app",
     githubUrl: "https://github.com/lahiru321/rainvidz-clothing-website",
     theme: "orange",
+  },
+    {
+    title: "Zentry",
+    description: "Zentry is a single-page marketing/landing site for a metagame product. It uses plain HTML, CSS and a small app.js script. The site includes a hero video, info cards with autoplay videos, and a contact section.",
+    techStack: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://zentry-gaming-site.vercel.app/",
+    githubUrl: "https://github.com/lahiru321/Zentry-gaming-site",
+    theme: "emerald",
   }
 ];
